@@ -107,7 +107,7 @@ body {
     gap: 15px;
 }
 
-.action-buttons {
+.action-buttons button {
     background-color: #1992d4;
     color: white;
     border: none;
