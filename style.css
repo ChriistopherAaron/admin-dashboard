@@ -19,6 +19,34 @@ body {
 }
 
 /* 3. SIDEBAR STYLES */
+
+/* Restrain all SVG images so they don't break layout */
+img.sidebar-icon,
+img.header-icon,
+img.card-icon {
+  display: inline-block;
+  object-fit: contain;
+}
+
+/* 1. Sidebar Icons */
+.sidebar-icon {
+  width: 22px;
+  height: 22px;
+  filter: invert(1); /* Turns black downloaded SVGs into white for the blue background */
+}
+
+/* 2. Header Search & Bell Icons */
+.header-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 3. Card Action Icons (Star, Eye, Share) */
+.card-icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
 .sidebar {
   background-color: #1992d4;
   color: #ffffff;
@@ -224,9 +252,19 @@ body {
 .card-actions {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 16px;
-  font-size: 1.1rem;
-  cursor: pointer;
+}
+.card-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2 ease;
+    opacity: 0.75;
+}
+.card-icon:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 /* Sidebar Section (Announcements & Trending) */
