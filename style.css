@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: lightblue;
+    padding: 25px 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 30px;
+    align-content: start;
+}
+.sidebar h1 {
+    font-size: 1.8rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.right-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #f0f4f8;
+}
+.header {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.search-container {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    width: 80%;
+    max-width: 600px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #cbd5e1;
+    background-color: #e2e8f0;
+    outline: none;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.greeting-sub {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.greeting-main {
+    font-size: 1.4rem;
+}
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.action-buttons {
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.avatar-small {
+    width: 35px;
+    height: 35px;
+    background-color: #facc15;
+    border-radius: 50%;
+}
+.avatar-large {
+    width: 60px;
+    height: 60px;
+    background-color: #facc15;
+    border-radius: 50%;
+}
