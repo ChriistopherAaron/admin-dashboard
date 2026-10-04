@@ -7,57 +7,159 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="container">
-            <aside class="sidebar">
-                <div class="logo">
-                    <h1>Dashboard</h1>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Dashboard</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Communities</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Right Container -->
+        <div class="right-container">
+            <header class="header">
+                <!-- Top Row: Search + User Menu -->
+                <div class="header-top">
+                    <div class="search-container">
+                        <label for="search">🔍</label>
+                        <input type="search" id="search" placeholder="Search...">
+                    </div>
+                    <div class="user-profile">
+                        <span class="bell-icon">🔔</span>
+                        <div class="avatar-small"></div>
+                        <span class="user-name">Christopher</span>
+                    </div>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Messages</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Tasks</a></li>
-                        <li><a href="#">Communities</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                </nav>
-            </aside>
-            <div class="right-container">
-<header class="header">
-    <!-- Top Row: Search + User Menu -->
-    <div class="header-top">
-        <div class="search-container">
-            <label for="search">🔍</label>
-            <input type="search" id="search" placeholder="Search...">
-        </div>
-        <div class="user-profile">
-            <span class="bell-icon">🔔</span>
-            <div class="avatar-small"></div>
-            <span class="user-name">Christopher</span>
+
+                <!-- Bottom Row: Greeting + Action Buttons -->
+                <div class="header-bottom">
+                    <div class="greeting">
+                        <div class="avatar-large"></div>
+                        <div>
+                            <p class="greeting-sub">Hola,</p>
+                            <h3 class="greeting-main">Chris Aaron (@ChrisAaronSG)</h3>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Content Body -->
+            <main class="content">
+                <!-- LEFT SIDE: Project Cards Grid -->
+                <div class="projects-section">
+                    <h2 class="section-title">Your Projects</h2>
+                    <div class="cards-grid">
+                        <div class="card">
+                            <h3>Etch-a-Sketch App</h3>
+                            <p>Interactive browser drawing grid application using HTML, CSS, and dynamic DOM manipulation with JavaScript.</p>
+                            <div class="card-actions">⭐ 👁️ 🔗</div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Calculator Project</h3>
+                            <p>Clean UI calculator featuring custom CSS grid layout and step-by-step arithmetic evaluation logic in JS.</p>
+                            <div class="card-actions">⭐ 👁️ 🔗</div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Rock Paper Scissors</h3>
+                            <p>Browser game implementation featuring interactive UI buttons, real-time score keeping, and dynamic round output.</p>
+                            <div class="card-actions">⭐ 👁️ 🔗</div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Landing Page Mockup</h3>
+                            <p>Fully responsive landing page styled with flexbox alignment, modern typography, and structured content sections.</p>
+                            <div class="card-actions">⭐ 👁️ 🔗</div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Loading Screen Animation</h3>
+                            <p>Smooth visual loading animations created purely with CSS keyframes, transforms, and transition effects.</p>
+                            <div class="card-actions">⭐ 👁️ 🔗</div>
+                        </div>
+
+                        <div class="card">
+                            <h3>CS50 Computer Science</h3>
+                            <p>Exploring fundamental algorithms, memory management, and data structures through Harvard's CS50 coursework.</p>
+                            <div class="card-actions">⭐ 👁️ 🔗</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: Announcements & Trending -->
+                <div class="sidebar-section">
+                    <!-- Announcements Widget -->
+                    <div class="announcements-container">
+                        <h2 class="section-title">Announcements</h2>
+                        <div class="announcements-card">
+                            <div class="announcement-item">
+                                <h4>SWE Transition Progress</h4>
+                                <p>Consistently advancing through web development and computer science fundamentals every week!</p>
+                            </div>
+                            <hr>
+                            <div class="announcement-item">
+                                <h4>The Odin Project Curriculum</h4>
+                                <p>Mastering complex CSS layouts like Grid and Flexbox while building real hands-on projects.</p>
+                            </div>
+                            <hr>
+                            <div class="announcement-item">
+                                <h4>Loving the Journey</h4>
+                                <p>Building real applications and solving software problems step-by-step is becoming second nature.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trending Widget -->
+                    <div class="trending-container">
+                        <h2 class="section-title">Trending</h2>
+                        <div class="trending-card">
+                            <div class="trending-user">
+                                <div class="avatar-small"></div>
+                                <div>
+                                    <p class="user-handle">@aaron_dev</p>
+                                    <p class="user-sub">Building Admin Dashboard</p>
+                                </div>
+                            </div>
+                            <div class="trending-user">
+                                <div class="avatar-small"></div>
+                                <div>
+                                    <p class="user-handle">@web_journey</p>
+                                    <p class="user-sub">HTML & CSS Grid Expert</p>
+                                </div>
+                            </div>
+                            <div class="trending-user">
+                                <div class="avatar-small"></div>
+                                <div>
+                                    <p class="user-handle">@odin_student</p>
+                                    <p class="user-sub">Intermediate JS Path</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
 
-    <!-- Bottom Row: Greeting + Action Buttons -->
-    <div class="header-bottom">
-        <div class="greeting">
-            <div class="avatar-large"></div>
-            <div>
-                <p class="greeting-sub">Hola,</p>
-                <h3 class="greeting-main">Chris Aaron (@ChrisAaronSG)</h3>
-            </div>
-        </div>
-        <div class="action-buttons">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-        </div>
-    </div>
-</header>
-    
     <script src="script.js" defer></script>
 </body>
 </html>
