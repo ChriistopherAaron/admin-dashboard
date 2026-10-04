@@ -2,6 +2,8 @@
 
 A responsive, modern Admin Dashboard layout built as part of [The Odin Project](https://www.theodinproject.com/) curriculum. This project demonstrates intermediate CSS layout techniques, utilizing CSS Grid and Flexbox to build a structured, dynamic web interface based on a real-world design mockup.
 
+![Admin Dashboard Preview](preview.png)
+
 ---
 
 ## 🚀 Live Demo
@@ -49,7 +51,9 @@ admin-dashboard/
 │   ├── star.svg
 │   └── view-dashboard.svg
 ├── index.html             # Semantic HTML5 layout
+├── preview.png            # Dashboard preview screenshot
 ├── README.md              # Project documentation
+├── script.js              # Project JavaScript file
 └── style.css              # Custom CSS Grid & Flexbox rules
 
 ## 👤 Author
